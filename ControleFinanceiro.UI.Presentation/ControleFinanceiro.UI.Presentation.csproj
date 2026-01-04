@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A02FB7A-7563-4AF7-9B3D-C3D6419C809D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControleFinanceiro.UI.Presentation</RootNamespace>
+    <AssemblyName>ControleFinanceiro.UI.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\ControleFinanceiro.UI.Presentation.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\ControleFinanceiro.UI.Presentation.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.429, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencias\Ajax\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Cinza\Cinza.css" />
+    <Content Include="App_Themes\Default\Default.css" />
+    <Content Include="App_Themes\Vermelho\Vermelho.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Dependencias\Ajax\AjaxControlToolkit.dll" />
+    <Content Include="Dependencias\Ajax\AjaxControlToolkit.pdb" />
+    <Content Include="Dependencias\Ajax\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\LICENSE.txt" />
+    <Content Include="Dependencias\Ajax\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\ReadMe.html" />
+    <Content Include="Dependencias\Ajax\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\SanitizerProviders\HtmlAgilityPack.dll" />
+    <Content Include="Dependencias\Ajax\SanitizerProviders\SanitizerProviders.dll" />
+    <Content Include="Dependencias\Ajax\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="Dependencias\Ajax\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="Imagens\ajax-loader.gif" />
+    <Content Include="Imagens\ajuda.png" />
+    <Content Include="Imagens\back-icon.png" />
+    <Content Include="Imagens\Barra1.png" />
+    <Content Include="Imagens\BarraVermelho.png" />
+    <Content Include="Imagens\bg.png" />
+    <Content Include="Imagens\bg_botao.png" />
+    <Content Include="Imagens\bg_buscar.png" />
+    <Content Include="Imagens\bg_header.png" />
+    <Content Include="Imagens\bg_header2.png" />
+    <Content Include="Imagens\bg_header_3.png" />
+    <Content Include="Imagens\Boleto.png" />
+    <Content Include="Imagens\BoletoCarteira.png" />
+    <Content Include="Imagens\buscar-form.png" />
+    <Content Include="Imagens\buscar.png" />
+    <Content Include="Imagens\Cadastro.png" />
+    <Content Include="Imagens\Cancel.png" />
+    <Content Include="Imagens\Carteira.png" />
+    <Content Include="Imagens\cllipboard.png" />
+    <Content Include="Imagens\Close-icon.png" />
+    <Content Include="Imagens\Close-icon2.png" />
+    <Content Include="Imagens\Close-icon3.png" />
+    <Content Include="Imagens\Configuration.png" />
+    <Content Include="Imagens\DashBoard.png" />
+    <Content Include="Imagens\delete.png" />
+    <Content Include="Imagens\Despesas.png" />
+    <Content Include="Imagens\DespesasReceitas.png" />
+    <Content Include="Imagens\Disk.png" />
+    <Content Include="Imagens\E1.png" />
+    <Content Include="Imagens\edit.png" />
+    <Content Include="Imagens\Finalizar.png" />
+    <Content Include="Imagens\finance.jpg" />
+    <Content Include="Imagens\Grupo.png" />
+    <Content Include="Imagens\Ico\grid_atualizar.png" />
+    <Content Include="Imagens\Ico\grid_deletar.png" />
+    <Content Include="Imagens\Ico\grid_editar.png" />
+    <Content Include="Imagens\Ico\search.fw.png" />
+    <Content Include="Imagens\Importar.png" />
+    <Content Include="Imagens\informacao.png" />
+    <Content Include="Imagens\LinkCadastro.png" />
+    <Content Include="Imagens\loader.gif" />
+    <Content Include="Imagens\Login-60-2.png" />
+    <Content Include="Imagens\Login-60.png" />
+    <Content Include="Imagens\Login.png" />
+    <Content Include="Imagens\Logo Orc.jpg" />
+    <Content Include="Imagens\Logo.png" />
+    <Content Include="Imagens\Logo48.png" />
+    <Content Include="Imagens\logout.png" />
+    <Content Include="Imagens\logout_home.png" />
+    <Content Include="Imagens\log_out.png" />
+    <Content Include="Imagens\Mailing.png" />
+    <Content Include="Imagens\Menu.png" />
+    <Content Include="Imagens\MenuCad.png" />
+    <Content Include="Imagens\MenuConf.png" />
+    <Content Include="Imagens\MenuRel.png" />
+    <Content Include="Imagens\New.png" />
+    <Content Include="Imagens\ok.png" />
+    <Content Include="Imagens\Ok_32x32.png" />
+    <Content Include="Imagens\Operadora.png" />
+    <Content Include="Imagens\Pausa.png" />
+    <Content Include="Imagens\Provisoes.png" />
+    <Content Include="Imagens\Report.png" />
+    <Content Include="Imagens\reports-icon.png" />
+    <Content Include="Imagens\Rota.png" />
+    <Content Include="Imagens\salvar.png" />
+    <Content Include="Imagens\Save.png" />
+    <Content Include="Imagens\SaveVermelho.png" />
+    <Content Include="Imagens\search-icon.png" />
+    <Content Include="Imagens\search.png" />
+    <Content Include="Imagens\Segmento.png" />
+    <Content Include="Imagens\Servidor.png" />
+    <Content Include="Imagens\signature-icon.png" />
+    <Content Include="Imagens\STIRamal.png" />
+    <Content Include="Imagens\Sulfite.png" />
+    <Content Include="Imagens\talk.png" />
+    <Content Include="Imagens\Tarifa.png" />
+    <Content Include="Imagens\TarifaAlternativa.png" />
+    <Content Include="Imagens\Tarifas.png" />
+    <Content Include="Imagens\TarifaTipo.png" />
+    <Content Include="Imagens\User.png" />
+    <Content Include="Imagens\User2.png" />
+    <Content Include="Imagens\Usuario.png" />
+    <Content Include="Imagens\voltar-menu.png" />
+    <Content Include="Imagens\voltar-p.png" />
+    <Content Include="Imagens\voltar.fw.png" />
+    <Content Include="Imagens\voltar.png" />
+    <Content Include="Pages\Logados\Administrador\Carteira.aspx" />
+    <Content Include="Pages\Logados\Administrador\DadosBancario.aspx" />
+    <Content Include="Pages\Logados\Administrador\DefineAcesso.aspx" />
+    <Content Include="Pages\Logados\Administrador\Fornecedor.aspx" />
+    <Content Include="Pages\Logados\Administrador\SegmentoOrcamentoUnitario.aspx" />
+    <Content Include="Pages\Logados\Financeiro\Despesa.aspx" />
+    <Content Include="Pages\Logados\Administrador\Segmento.aspx" />
+    <Content Include="Pages\Logados\Administrador\Usuario.aspx" />
+    <Content Include="Pages\Logados\Default.aspx" />
+    <Content Include="Pages\Logados\Financeiro\CadastroDespesasReceitas.aspx" />
+    <Content Include="Pages\Logados\Financeiro\DespesaRateio.aspx" />
+    <Content Include="Pages\Logados\Financeiro\HistoricoFuncionario.aspx" />
+    <Content Include="Pages\Logados\Financeiro\ImportarXlS.aspx" />
+    <Content Include="Pages\Logados\Financeiro\Receita.aspx" />
+    <Content Include="Pages\Logados\Orcamento\Carteira.aspx" />
+    <Content Include="Pages\Logados\Orcamento\Orcamento.aspx" />
+    <Content Include="Pages\Logados\ParqueGrafico\Boleto.aspx" />
+    <Content Include="Pages\Logados\ParqueGrafico\BoletoCarteira.aspx" />
+    <Content Include="Pages\Logados\RecursosHumanos\CadastroFuncionariosDespesas.aspx" />
+    <Content Include="Pages\Logados\RecursosHumanos\CadastroFuncionariosProvisoes.aspx" />
+    <Content Include="Pages\Logados\RecursosHumanos\ExportaListaFuncionarios.aspx" />
+    <Content Include="Pages\Logados\RecursosHumanos\ImportarSalarios.aspx" />
+    <Content Include="Pages\Logados\Relatorios\Consolidado\Consolidado.aspx" />
+    <Content Include="Pages\Logados\Relatorios\ConsolidadoFiltros.aspx" />
+    <Content Include="Pages\Logados\Relatorios\ExtratoBancario\ExtratoBancario.aspx" />
+    <Content Include="Pages\Logados\Relatorios\ExtratoBancarioFiltros.aspx" />
+    <Content Include="Pages\Logados\Relatorios\ExtratoBancario\ExtratoBancarioDiario.aspx" />
+    <Content Include="Pages\Logados\Relatorios\FechamentoFiltros.aspx" />
+    <Content Include="Pages\Logados\Relatorios\Fechamento\Fechamento.aspx" />
+    <Content Include="Pages\Logados\Relatorios\SegmentoCarteiraFiltros.aspx" />
+    <Content Include="Pages\Logados\Relatorios\SegmentoCarteira\SegmentoCarteira.aspx" />
+    <Content Include="Pages\Logados\Telefonia\STIRamal.aspx" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jvalidacao.js" />
+    <Content Include="Teste.aspx" />
+    <Content Include="Teste2.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebControl\MensagemOK.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Common.cs" />
+    <Compile Include="Account\CustomExtensions.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\Carteira.aspx.cs">
+      <DependentUpon>Carteira.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\Carteira.aspx.designer.cs">
+      <DependentUpon>Carteira.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\DadosBancario.aspx.cs">
+      <DependentUpon>DadosBancario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\DadosBancario.aspx.designer.cs">
+      <DependentUpon>DadosBancario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\DefineAcesso.aspx.cs">
+      <DependentUpon>DefineAcesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\DefineAcesso.aspx.designer.cs">
+      <DependentUpon>DefineAcesso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\Fornecedor.aspx.cs">
+      <DependentUpon>Fornecedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\Fornecedor.aspx.designer.cs">
+      <DependentUpon>Fornecedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\SegmentoOrcamentoUnitario.aspx.cs">
+      <DependentUpon>SegmentoOrcamentoUnitario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\SegmentoOrcamentoUnitario.aspx.designer.cs">
+      <DependentUpon>SegmentoOrcamentoUnitario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\Despesa.aspx.cs">
+      <DependentUpon>Despesa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\Despesa.aspx.designer.cs">
+      <DependentUpon>Despesa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\Segmento.aspx.cs">
+      <DependentUpon>Segmento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\Segmento.aspx.designer.cs">
+      <DependentUpon>Segmento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Administrador\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\CadastroDespesasReceitas.aspx.cs">
+      <DependentUpon>CadastroDespesasReceitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\CadastroDespesasReceitas.aspx.designer.cs">
+      <DependentUpon>CadastroDespesasReceitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\DespesaRateio.aspx.cs">
+      <DependentUpon>DespesaRateio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\DespesaRateio.aspx.designer.cs">
+      <DependentUpon>DespesaRateio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\HistoricoFuncionario.aspx.cs">
+      <DependentUpon>HistoricoFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\HistoricoFuncionario.aspx.designer.cs">
+      <DependentUpon>HistoricoFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\ImportarXlS.aspx.cs">
+      <DependentUpon>ImportarXlS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\ImportarXlS.aspx.designer.cs">
+      <DependentUpon>ImportarXlS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\Receita.aspx.cs">
+      <DependentUpon>Receita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Financeiro\Receita.aspx.designer.cs">
+      <DependentUpon>Receita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\MasterPageMenu.Master.cs">
+      <DependentUpon>MasterPageMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\MasterPageMenu.Master.designer.cs">
+      <DependentUpon>MasterPageMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Orcamento\Carteira.aspx.cs">
+      <DependentUpon>Carteira.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Orcamento\Carteira.aspx.designer.cs">
+      <DependentUpon>Carteira.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Orcamento\Orcamento.aspx.cs">
+      <DependentUpon>Orcamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Orcamento\Orcamento.aspx.designer.cs">
+      <DependentUpon>Orcamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\ParqueGrafico\Boleto.aspx.cs">
+      <DependentUpon>Boleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\ParqueGrafico\Boleto.aspx.designer.cs">
+      <DependentUpon>Boleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\ParqueGrafico\BoletoCarteira.aspx.cs">
+      <DependentUpon>BoletoCarteira.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\ParqueGrafico\BoletoCarteira.aspx.designer.cs">
+      <DependentUpon>BoletoCarteira.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\RecursosHumanos\CadastroFuncionariosDespesas.aspx.cs">
+      <DependentUpon>CadastroFuncionariosDespesas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\RecursosHumanos\CadastroFuncionariosDespesas.aspx.designer.cs">
+      <DependentUpon>CadastroFuncionariosDespesas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\RecursosHumanos\CadastroFuncionariosProvisoes.aspx.cs">
+      <DependentUpon>CadastroFuncionariosProvisoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\RecursosHumanos\CadastroFuncionariosProvisoes.aspx.designer.cs">
+      <DependentUpon>CadastroFuncionariosProvisoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\RecursosHumanos\ExportaListaFuncionarios.aspx.cs">
+      <DependentUpon>ExportaListaFuncionarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\RecursosHumanos\ExportaListaFuncionarios.aspx.designer.cs">
+      <DependentUpon>ExportaListaFuncionarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\RecursosHumanos\ImportarSalarios.aspx.cs">
+      <DependentUpon>ImportarSalarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\RecursosHumanos\ImportarSalarios.aspx.designer.cs">
+      <DependentUpon>ImportarSalarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\Consolidado\Consolidado.aspx.cs">
+      <DependentUpon>Consolidado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\Consolidado\Consolidado.aspx.designer.cs">
+      <DependentUpon>Consolidado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\ConsolidadoFiltros.aspx.cs">
+      <DependentUpon>ConsolidadoFiltros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\ConsolidadoFiltros.aspx.designer.cs">
+      <DependentUpon>ConsolidadoFiltros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\ExtratoBancario\ExtratoBancario.aspx.cs">
+      <DependentUpon>ExtratoBancario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\ExtratoBancario\ExtratoBancario.aspx.designer.cs">
+      <DependentUpon>ExtratoBancario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\ExtratoBancarioFiltros.aspx.cs">
+      <DependentUpon>ExtratoBancarioFiltros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\ExtratoBancarioFiltros.aspx.designer.cs">
+      <DependentUpon>ExtratoBancarioFiltros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\ExtratoBancario\ExtratoBancarioDiario.aspx.cs">
+      <DependentUpon>ExtratoBancarioDiario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\ExtratoBancario\ExtratoBancarioDiario.aspx.designer.cs">
+      <DependentUpon>ExtratoBancarioDiario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\FechamentoFiltros.aspx.cs">
+      <DependentUpon>FechamentoFiltros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\FechamentoFiltros.aspx.designer.cs">
+      <DependentUpon>FechamentoFiltros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\Fechamento\Fechamento.aspx.cs">
+      <DependentUpon>Fechamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\Fechamento\Fechamento.aspx.designer.cs">
+      <DependentUpon>Fechamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\SegmentoCarteiraFiltros.aspx.cs">
+      <DependentUpon>SegmentoCarteiraFiltros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\SegmentoCarteiraFiltros.aspx.designer.cs">
+      <DependentUpon>SegmentoCarteiraFiltros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\SegmentoCarteira\SegmentoCarteira.aspx.cs">
+      <DependentUpon>SegmentoCarteira.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Relatorios\SegmentoCarteira\SegmentoCarteira.aspx.designer.cs">
+      <DependentUpon>SegmentoCarteira.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logados\Telefonia\STIRamal.aspx.cs">
+      <DependentUpon>STIRamal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logados\Telefonia\STIRamal.aspx.designer.cs">
+      <DependentUpon>STIRamal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teste.aspx.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste.aspx.designer.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teste2.aspx.cs">
+      <DependentUpon>Teste2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste2.aspx.designer.cs">
+      <DependentUpon>Teste2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControl\MensagemOK.ascx.cs">
+      <DependentUpon>MensagemOK.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControl\MensagemOK.ascx.designer.cs">
+      <DependentUpon>MensagemOK.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Imagens\Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControleFinanceiro.BLL\ControleFinanceiro.BLL.csproj">
+      <Project>{2BDB78F0-1F29-488F-B0F2-FBBB7E1F8874}</Project>
+      <Name>ControleFinanceiro.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControleFinanceiro.DTO\ControleFinanceiro.DTO.csproj">
+      <Project>{C965C1E0-7D9C-4B8C-A6FE-8A310DC616B3}</Project>
+      <Name>ControleFinanceiro.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Logados\MasterPageMenu.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Default.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencias\Ajax\AjaxControlToolkitSampleSite.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Vermelho\Vermelho.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Cinza\Cinza.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22274</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,152 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+    background: #660000;
+    font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: White;
+}
+
+.menuEsquerdo
+{
+    width: 260px;
+    background-image: url('../../Imagens/BarraVermelho.png');
+    background-repeat: repeat-y;
+    height:800px;
+    float:left;
+}
+
+.LogoOrc
+{
+    width:200px;
+}
+
+.menuDireito
+{
+    width: 80%;
+    float:left;
+}
+
+.header_grid
+{
+    padding: 5px;
+    background-color: #7e0000;
+}
+
+.tituloPagina
+{
+    color: White;
+    font-size: 26px;
+}
+
+
+tr
+{
+    vertical-align:top;
+}
+/* Botões
+----------------------------------------------------------*/
+.ButtonSalvar
+{
+    background-image: url('../../Imagens/SaveVermelho.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 48px;
+    border: none;
+    color: White;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.ButtonCancelar
+{
+    background-image: url('../../Imagens/Cancel.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    border: none;
+    color: White;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.ButtonNovo
+{
+    background-image: url('../../Imagens/New.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    border: none;
+    color: White;
+    font-weight: bolder;
+    cursor: pointer;    
+}
+
+.ButtonRelatorio
+{
+    background-image: url('../../Imagens/reports-icon.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    border: none;
+    color: White;
+    font-weight: bolder;
+    cursor: pointer;    
+}
+
+
+
+/* PopUp Modal
+----------------------------------------------------------*/
+/*
+.modalBackground
+{
+    background-color: Black;
+    filter: alpha(opacity=90);
+    opacity: 0.8;
+}
+
+.modalPopup
+{
+    background-color: #004C66;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    min-width: 650px;
+    min-height: 450px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.80);
+}
+
+.modalPopup table
+{
+    width: 725px;
+    border-bottom: 1px dotted #e9eaea;
+}
+
+.modalPopup table tr:hover
+{
+    background-color: #0b6d8f;
+}
+
+.header_popup
+{
+    width: 725px;
+    height: 30px;
+    border-bottom: 1px solid #054f85;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}*/

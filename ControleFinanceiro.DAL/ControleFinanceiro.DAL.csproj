@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D4E40AA-F2A0-4875-9026-808B16B9E863}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControleFinanceiro.DAL</RootNamespace>
+    <AssemblyName>ControleFinanceiro.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files\Microsoft Office\Office16\ADDINS\PowerPivot Excel Add-in\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auxiliar.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="Boleto.cs" />
+    <Compile Include="BoletoCarteira.cs" />
+    <Compile Include="Carteira.cs" />
+    <Compile Include="CarteiraTipo.cs" />
+    <Compile Include="CobNetBoletoCarteira.cs" />
+    <Compile Include="CobNetBoletos.cs" />
+    <Compile Include="CobNetProduto.cs" />
+    <Compile Include="CobNetSegmento.cs" />
+    <Compile Include="Conexao.cs" />
+    <Compile Include="Consolidado.cs" />
+    <Compile Include="ControleAcesso.cs" />
+    <Compile Include="CobNetCredor.cs" />
+    <Compile Include="ControleAcessoUsuario.cs" />
+    <Compile Include="ConsolidadoNaoOperacional.cs" />
+    <Compile Include="DiretoIndireto.cs" />
+    <Compile Include="HistoricoFuncionario.cs" />
+    <Compile Include="Orcamento.cs" />
+    <Compile Include="SegmentoOrcamentoUnitario.cs" />
+    <Compile Include="SegmentoTipoDespesa.cs" />
+    <Compile Include="XLSX.cs" />
+    <Compile Include="DadosBancario.cs" />
+    <Compile Include="Despesa.cs" />
+    <Compile Include="DespesaRateio.cs" />
+    <Compile Include="DespesaRateioCarteira.cs" />
+    <Compile Include="Discador.cs" />
+    <Compile Include="ExtratoBancario.cs" />
+    <Compile Include="Fornecedor.cs" />
+    <Compile Include="Funcionario.cs" />
+    <Compile Include="FuncionarioDespesas.cs" />
+    <Compile Include="FuncionarioProvisoes.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Perfil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ramal.cs" />
+    <Compile Include="Receita.cs" />
+    <Compile Include="ReceitaDespesa.cs" />
+    <Compile Include="Segmento.cs" />
+    <Compile Include="SMS.cs" />
+    <Compile Include="STI.cs" />
+    <Compile Include="STIRamal.cs" />
+    <Compile Include="TipoSegmento.cs" />
+    <Compile Include="TipoPostagem.cs" />
+    <Compile Include="Ura.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControleFinanceiro.DTO\ControleFinanceiro.DTO.csproj">
+      <Project>{C965C1E0-7D9C-4B8C-A6FE-8A310DC616B3}</Project>
+      <Name>ControleFinanceiro.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageMenu.master.cs"
+    Inherits="ControleFinanceiro.UI.Presentation.Pages.Logados.MasterPageMenu" %>
+
+<%@ Register Src="~/WebControl/MensagemOK.ascx" TagName="MensagemOK" TagPrefix="uc1" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Controle Financeiro</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Conteudo">
+        <div class="menuEsquerdo" id="menuEsquerdo">
+            &nbsp; &nbsp; &nbsp;&nbsp;
+            <asp:Image ImageUrl="~/Imagens/Logo Orc.jpg" ID="imgLogo" runat="server" CssClass="LogoOrc" />
+            <br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: Black; font-size: x-large;">Centro
+                de Custo</span>
+            <br />
+            <br />
+            <div style="padding-left: 35px; width: 190px; height: 100px" id="Ajustes">
+                <asp:Accordion ID="Accordion1" runat="server">
+                    <Panes>
+                        <asp:AccordionPane ID="aplAdministrador" runat="server">
+                            <Header>
+                                <span style='text-align: center; color: gray; font-weight: bold; text-align: center;
+                                    cursor: pointer;'>Administrador</span><hr />
+                            </Header>
+                            <Content>
+                                <asp:Literal ID="ltlMenuAdministrador" runat="server"></asp:Literal>
+                            </Content>
+                        </asp:AccordionPane>
+                        <asp:AccordionPane ID="aplParqueGrafico" runat="server">
+                            <Header>
+                                <span style='text-align: center; color: gray; font-weight: bold; text-align: center;
+                                    cursor: pointer;'>Parque Grafico</span><hr />
+                            </Header>
+                            <Content>
+                                <asp:Literal ID="ltlMenuParqueGrafico" runat="server"></asp:Literal>
+                            </Content>
+                        </asp:AccordionPane>
+                        <asp:AccordionPane ID="aplFinanceiro" runat="server">
+                            <Header>
+                                <span style='text-align: center; color: gray; font-weight: bold; text-align: center;
+                                    cursor: pointer;'>Financeiro</span><hr />
+                            </Header>
+                            <Content>
+                                <asp:Literal ID="ltlMenuFinanceiro" runat="server"></asp:Literal>
+                            </Content>
+                        </asp:AccordionPane>
+                        <asp:AccordionPane ID="aplTelefonia" runat="server">
+                            <Header>
+                                <span style='text-align: center; color: gray; font-weight: bold; text-align: center;
+                                    cursor: pointer;'>Telefonia</span><hr />
+                            </Header>
+                            <Content>
+                                <asp:Literal ID="ltlMenuTelefonia" runat="server"></asp:Literal>
+                            </Content>
+                        </asp:AccordionPane>
+                        <asp:AccordionPane ID="aplRecursosHumanos" runat="server">
+                            <Header>
+                                <span style='text-align: center; color: gray; font-weight: bold; text-align: center;
+                                    cursor: pointer;'>Recursos Humanos</span><hr />
+                            </Header>
+                            <Content>
+                                <asp:Literal ID="ltlMenuRecursosHumanos" runat="server"></asp:Literal>
+                            </Content>
+                        </asp:AccordionPane>
+                        <asp:AccordionPane ID="aplRelatorios" runat="server">
+                            <Header>
+                                <span style='text-align: center; color: gray; font-weight: bold; text-align: center;
+                                    cursor: pointer;'>Relatorios</span><hr />
+                            </Header>
+                            <Content>
+                                <asp:Literal ID="ltlMenuRelatorios" runat="server"></asp:Literal>
+                            </Content>
+                        </asp:AccordionPane>
+                    </Panes>
+                </asp:Accordion>
+            </div>
+        </div>
+        <div class="menuDireito" id="menuDireito">
+            <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="true"
+                EnableScriptLocalization="true">
+            </asp:ScriptManager>
+            <div id="Titulos">
+                <span class="tituloPagina">
+                    <asp:Label ID="lblNomePagina" runat="server" Text="Detalhes do Devedor"></asp:Label></span><hr />
+                <span class="detalhesPagina">
+                    <asp:Label ID="lblDescricaoPagina" runat="server" Text="Descrição das funcionalidades da página"></asp:Label></span></div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <uc1:MensagemOK ID="MensagemOK1" runat="server" />
+    </form>
+</body>
+</html>
